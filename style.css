@@ -26,10 +26,9 @@ body{
 @media only screen and (max-width: 810px) {
     .head-line {
       text-align: left;
-      /* position: relative; */
     }
 
-    .hamburger-menu{
+    .ham-burger_btn{
         align-items: flex-end;
     }
   }
@@ -38,7 +37,7 @@ body{
     text-shadow: 0 2px 5px rgba(255,101,47,2);
 }
 
-.nav-bar{
+.ham-burger{
     width: 300px;
     height: 100%;
     background-color: saddlebrown;
@@ -56,7 +55,7 @@ body{
     right: 0;
 }
 
-.hamburger-menu{
+.ham-burger_btn{
     width: 80px;
     height: 50px;
     position: fixed;
