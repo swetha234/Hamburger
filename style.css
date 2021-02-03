@@ -13,7 +13,7 @@ body{
     background-size: cover;
 }
 
-.heading{
+.head-line{
     color: snow;
     font-size: 4rem;
     padding-top: 2rem;
@@ -21,6 +21,21 @@ body{
     position: relative;
     text-align: center;
     justify-content: center;
+}
+
+@media only screen and (max-width: 810px) {
+    .head-line {
+      text-align: left;
+      /* position: relative; */
+    }
+
+    .hamburger-menu{
+        align-items: flex-end;
+    }
+  }
+
+.head-line p{
+    text-shadow: 0 2px 5px rgba(255,101,47,2);
 }
 
 .nav-bar{
@@ -42,26 +57,31 @@ body{
 }
 
 .hamburger-menu{
-    width: 35px;
-    height: 30px;
+    width: 80px;
+    height: 50px;
     position: fixed;
     top: 50px;
-    right: 50px;
+    right: 10px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    
 }
 
 .line{
-    width: 100%;
+    width: 3rem;
     height: 3px;
     background-color: snow;
-    transition: all 0.8s
+    transition: all 0.8s;
+    box-shadow: 0 2px 5px rgba(255,101,47,2);
+    transition: all .5s ease-in-out;
+    
 }
 
 .transform .line-1{
-    transform: rotateZ(-405deg) translate(-8px, 6px);
+    transform: rotate(-40deg) translate(-18px, 6px);
+    
 }
 
 .transform .line-2{
@@ -69,7 +89,7 @@ body{
 }
 
 .transform .line-3{
-    transform: rotateZ(405deg) translate(-8px, -6px);
+    transform: rotate(40deg) translate(-18px, -6px);
 }
 
 .hamburger-list{
@@ -97,7 +117,8 @@ body{
     content: "";
     width: 100%;
     height: 2px;
-    background-color:purple;
+    background-color:none;
+    box-shadow: 0 2px 5px rgba(255,101,47,2);
     position: absolute;
     left: 0;
     transform: scaleX(0);
